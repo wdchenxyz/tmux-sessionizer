@@ -4,6 +4,14 @@ its a script that does everything awesome at all times
 ## Requirements
 fzf and tmux
 
+## Configuration
+Copy the example config to your `~/.config` directory:
+```bash
+mkdir -p ~/.config/tmux-sessionizer
+cp tmux-sessionizer.conf.example ~/.config/tmux-sessionizer/tmux-sessionizer.conf
+```
+Then edit `~/.config/tmux-sessionizer/tmux-sessionizer.conf` to your liking.
+
 ## Usage
 ```bash
 tmux-sessionizer [<partial name of session>]

@@ -1,0 +1,23 @@
+# tmux-sessionizer config
+# Copy this file to ~/.config/tmux-sessionizer/tmux-sessionizer.conf
+#   mkdir -p ~/.config/tmux-sessionizer
+#   cp tmux-sessionizer.conf.example ~/.config/tmux-sessionizer/tmux-sessionizer.conf
+
+# Search paths for directory selection
+# Overrides the defaults (~/ ~/personal ~/personal/dev/env/.config)
+# TS_SEARCH_PATHS=(~/ ~/projects/)
+
+# Additional search paths (appended to TS_SEARCH_PATHS)
+# Suffix with :number to set custom depth per path
+# TS_EXTRA_SEARCH_PATHS=(~/ghq:3 ~/Git:3 ~/.config:2)
+
+# Max depth for directory search (default: 1)
+# TS_MAX_DEPTH=1
+
+# Session commands (used with -s flag)
+# e.g. tmux-sessionizer -s 0 runs the first command in window 69+
+# TS_SESSION_COMMANDS=(claude .)
+
+# Logging (uncomment to enable)
+# TS_LOG=file   # "file" writes to TS_LOG_FILE, "echo" prints to stdout
+# TS_LOG_FILE=~/.local/share/tmux-sessionizer/tmux-sessionizer.logs
